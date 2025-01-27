@@ -1,3 +1,212 @@
+/* Base adjustments for better scaling */
+:root {
+    --spacing-unit: 0.8rem;
+    --card-padding: 1rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+.panel {
+    padding: var(--spacing-unit);
+}
+
+/* Adjusting card sizes and spacing */
+.stat-card {
+    padding: var(--card-padding);
+}
+
+.stat-card i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+}
+
+/* Facility map adjustments */
+.facility-map {
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.facility-legend {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.color-box {
+    width: 12px;
+    height: 12px;
+}
+
+/* Amenity cards adjustments */
+.amenities-grid {
+    gap: 1rem;
+}
+
+.amenity-card {
+    padding: var(--card-padding);
+}
+
+.amenity-card i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.amenity-card h4 {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+}
+
+.amenity-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.amenity-card ul li {
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+/* Event cards adjustments */
+.event-card {
+    font-size: 0.9rem;
+}
+
+.event-date {
+    padding: 0.8rem;
+    min-width: 80px;
+}
+
+.event-content {
+    padding: 0.8rem;
+}
+
+.event-content h4 {
+    font-size: 1rem;
+}
+
+.event-time {
+    font-size: 0.8rem;
+}
+
+/* Construction section adjustments */
+.progress-metrics {
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.metric-card {
+    padding: var(--card-padding);
+}
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem auto;
+}
+
+.percentage {
+    font-size: 1.2rem;
+}
+
+.phase-grid {
+    gap: 1rem;
+}
+
+.phase-card {
+    font-size: 0.9rem;
+}
+
+.phase-header {
+    padding: 0.8rem;
+}
+
+.phase-header i {
+    font-size: 1.2rem;
+}
+
+.phase-content {
+    padding: 0.8rem;
+}
+
+.phase-content ul li {
+    padding: 0.3rem 0;
+}
+
+.phase-footer {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Safety metrics adjustments */
+.metrics-grid {
+    gap: 1rem;
+}
+
+.metric-item {
+    padding: var(--card-padding);
+}
+
+.metric-item i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-value {
+    font-size: 1.4rem;
+    margin: 0.3rem 0;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+}
+
+/* Chart container adjustments */
+.chart-container {
+    padding: 0.8rem;
+}
+
+.chart-container canvas {
+    max-height: 300px;
+}
+
+/* Tab content adjustments */
+.tab-content {
+    padding: var(--spacing-unit);
+}
+
+.info-section {
+    margin-bottom: 1.5rem;
+}
+
+.info-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.info-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Grid adjustments */
+.stats-grid,
+.amenities-grid,
+.phase-grid,
+.metrics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 * {
     margin: 0;
     padding: 0;
